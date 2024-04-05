@@ -53,7 +53,9 @@ public class Main {
         //J
         LocalDate fechaInicioProyecto2 = LocalDate.of(2024, 3, 15);
         LocalDate fechaFinProyecto2 = LocalDate.of(2024, 10, 20);
-        long periodoProyecto = ChronoUnit.DAYS.between(fechaInicioProyecto2, fechaFinProyecto2);
-        System.out.println("Periodo del proyecto: " + periodoProyecto);
+        long periodoProyecto1 = ChronoUnit.DAYS.between(fechaInicioProyecto2, fechaFinProyecto2);
+        long periodoProyecto2 = ChronoUnit.MONTHS.between(fechaInicioProyecto2, fechaFinProyecto2);
+        long periodoProyecto3 = ChronoUnit.YEARS.between(fechaInicioProyecto2, fechaFinProyecto2);
+        System.out.println("Dias: " + periodoProyecto1 +  " Meses "+ periodoProyecto2  + " Años "+ periodoProyecto3);
     }
 }
