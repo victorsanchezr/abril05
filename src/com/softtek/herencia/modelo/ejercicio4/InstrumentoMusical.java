@@ -1,6 +1,6 @@
 package com.softtek.herencia.modelo.ejercicio4;
 
-public class InstrumentoMusical {
+public abstract class InstrumentoMusical {
     protected String marca;
 
 
@@ -19,7 +19,5 @@ public class InstrumentoMusical {
         this.marca = marca;
     }
 
-    public String emitirSonido(){
-        return "Sonido Default";
-    }
+    public abstract String emitirSonido();
 }

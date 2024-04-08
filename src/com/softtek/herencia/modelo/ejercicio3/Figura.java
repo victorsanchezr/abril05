@@ -1,6 +1,6 @@
 package com.softtek.herencia.modelo.ejercicio3;
 
-public class Figura {
+public abstract class Figura {
     protected int x;
     protected int y;
 
@@ -35,10 +35,7 @@ public class Figura {
         return String.valueOf(x)+" "+String.valueOf(y);
     }
 
-    public double calcularArea(){
-
-        return x*y;
-    }
+    public abstract double calcularArea();
 
 
 }
